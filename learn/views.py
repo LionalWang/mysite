@@ -14,5 +14,10 @@ def add2(request, a, b):
     c = int(a)+int(b)
     return HttpResponse(str(c))
 
-def index(request):
+
+def jiangbeixi(request):
     return HttpResponse("我爱你")
+
+
+def home(request):
+    return render(request, 'home.html')

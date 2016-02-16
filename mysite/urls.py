@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^add/', learn_views.add, name='add'),
     url(r'^add2/(\d+)/(\d+)/$', learn_views.add2, name='add2'),
-    url(r'^jiangbeixi/', learn_views.index)
+    url(r'^jiangbeixi/', learn_views.jiangbeixi),
+    url(r'^$', learn_views.home, name='home'),
 ]
